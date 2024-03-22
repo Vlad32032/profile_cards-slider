@@ -79,7 +79,7 @@ const changeProfile = (profilesList, profileNumber) => {
     profile = profilesList[profileNumber]
 
     profileCard.classList.remove('animation')
-    setTimeout(() => profileCard.classList.add('animation'), 10)
+    setTimeout(() => profileCard.classList.add('animation'), 100)
 
     profileFoto.src = profile.fotoSrs
     root.style.setProperty('--profile-card-foto-color1', `var(${profile.fotoColor1})`);
