@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/main.js" defer></script>
+
+    <title>Profile card</title>
+</head>
+<body>
+    <main class="container">
+        <div class="profile-card" id="profileCard">
+            <div class="profile-card__foto">
+                <img alt="profile foto" id="profileFoto">
+            </div>
+
+            <div class="profile-card__main">
+                <div class="profile-card__main-info">
+                    <h3 class="profile-card__name" id="profileName"></h3>
+                    <span class="profile-card__nickname" id="profileNickname"></span>
+                    <!-- profile-card__description максимальная длина строки 130 символов -->
+                    <span class="profile-card__description" id="profileDescription"></span>
+                    <a 
+                        href="#"
+                        class="profile-card__instagram-link"
+                        id="profileInstagram"
+                        target="_blank"
+                    ></a>
+                </div>
+                
+                <div class="profile-card__main-links">
+                    <a
+                        href="#"
+                        class="profile-card__telegram-link"
+                        id="profileTelegram"
+                        title="telegram link"
+                        target="_blank"
+                    ></a>
+                    <a
+                        href="#"
+                        class="profile-card__facebook-link"
+                        id="profileFacebook"
+                        title="facebook link"
+                        target="_blank"
+                    ></a>
+                    <button class="profile-card__button-other" type="button"></button>
+                </div>
+            </div>
+
+            <div class="profile-card__info">
+                <div class="profile-card__info-post">
+                    <span id="profilePost"></span>
+                    <span>post</span>
+                </div>
+                <div class="profile-card__info-followers">
+                    <span id="profileFollowers"></span>
+                    <span>followers</span>
+                </div>
+                <div class="profile-card__info-following">
+                    <span id="profileFollowing"></span>
+                    <span>following</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="move-buttons-container">
+            <button id="prevButton" type="button">prev</button>
+            <button id="nextButton" type="button">next</button>
+        </div>
+    </main>
+</body>
+</html>
