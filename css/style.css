@@ -87,6 +87,9 @@ body {
 
     background: linear-gradient(333deg, var(--profile-card-foto-color1) 0%, var(--profile-card-foto-color2) 100%);
     border-radius: 50%;
+
+    transform: scale(0.2);
+    opacity: 0;
 }
 .profile-card__foto img {
     width: 64px;
@@ -105,6 +108,8 @@ body {
 
 .profile-card__main-info {
     width: 250px;
+
+    opacity: 0;
 }
 
 .profile-card__main-links {
@@ -119,6 +124,8 @@ body {
     color: var(--black);
     font-size: 15px;
     font-weight: bold;
+
+    transform: translateX(-25%);
 }
 
 .profile-card__nickname {
@@ -127,6 +134,8 @@ body {
     margin-top: 3px;
 
     font-size: 13px;
+
+    transform: translateX(-25%);
 }
 
 .profile-card__description {
@@ -137,6 +146,8 @@ body {
     margin-top: 19px;
 
     line-height: 1.3;
+
+    transform: translateX(-25%);
 }
 
 .profile-card__instagram-link {
@@ -151,6 +162,8 @@ body {
     font-size: 14px;
 
     cursor: pointer;
+
+    transform: translateX(-25%);
 }
 
 .profile-card__instagram-link:visited {
